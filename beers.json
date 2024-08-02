@@ -1,0 +1,23 @@
+[
+  { "Name": "Miller Light", "Quantity": 24 },
+  { "Name": "Bud Light", "Quantity": 15 },
+  { "Name": "Busch Light", "Quantity": 5 },
+  { "Name": "Corona", "Quantity": 5 },
+  { "Name": "Heineken", "Quantity": 5 },
+  { "Name": "Michaloba", "Quantity": 5 },
+  { "Name": "Stella", "Quantity": 5 },
+  { "Name": "Coors Light", "Quantity": 5 },
+  { "Name": "White Claw", "Quantity": 5 },
+  { "Name": "MGD", "Quantity": 5 },
+  { "Name": "Modelo", "Quantity": 5 },
+  { "Name": "Old English", "Quantity": 5 },
+  { "Name": "Mad Dog", "Quantity": 5 },
+  { "Name": "King Cobra", "Quantity": 5 },
+  { "Name": "Ice House", "Quantity": 5 },
+  { "Name": "High Noons", "Quantity": 5 },
+  { "Name": "Natty Ice", "Quantity": 5 },
+  { "Name": "Hamms", "Quantity": 5 },
+  { "Name": "Key Stone", "Quantity": 5 },
+  { "Name": "Old Style", "Quantity": 5 },
+  { "Name": "Steele Reserve", "Quantity": 5 }
+]

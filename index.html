@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beer List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 text-white">
+    <div
+      class="hero bg-cover bg-center bg-fixed h-screen flex flex-col justify-center items-center relative"
+      style="background-image: url(&quot;hero.png&quot;)"
+    >
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+      <div class="z-10 px-4 text-center">
+        <h1
+          id="heading"
+          class="animated-text text-6xl font-bold mb-6 text-white"
+        >
+          Pat's Tap
+        </h1>
+        <p class="text-2xl mb-6 text-white">
+          Where Every Pour is an Adventure in Craft and Creativity
+        </p>
+        <button
+          onclick="scrollToBeerList()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow"
+        >
+          Explore Our Selection
+        </button>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-4">
+      <h1 class="text-2xl font-bold text-center mb-6" id="beerListHeader">
+        Beer List
+      </h1>
+      <div id="beerList" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Beer cards will be inserted here -->
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4">
+      <div class="max-w-md mx-auto mt-10">
+        <form class="fade-in bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">Compliments Corner</h2>
+          <div class="mb-4">
+            <label class="block text-sm font-bold mb-2" for="name">Name</label>
+            <input
+              class="bg-gray-800 border border-gray-600 rounded w-full py-2 px-4"
+              id="name"
+              type="text"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-bold mb-2" for="email"
+              >Email</label
+            >
+            <input
+              class="bg-gray-800 border border-gray-600 rounded w-full py-2 px-4"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-sm font-bold mb-2" for="message"
+              >Message</label
+            >
+            <textarea
+              class="bg-gray-800 border border-gray-600 rounded w-full py-2 px-4"
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            type="submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <footer class="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="text-center mt-8">
+          <p id="footerYear">
+            © <span id="year"></span> Pat's Tap House. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+      function scrollToBeerList() {
+        document.getElementById("beerListHeader").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    </script>
+    <!-- Second Comit-->
+  </body>
+</html>
